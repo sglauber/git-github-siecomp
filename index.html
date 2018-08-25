@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>C lang</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <script src="./remark-latest.min.js"></script>
+    <script>
+        // Lembrar de rodar python -m SimpleHTTPServer
+        var slideshow = remark.create({
+            sourceUrl: 'slide.md',
+            ratio: '16:9',
+            highlightStyle: 'rainbow'
+        });
+
+        // setInterval(function () {carousel(slideshow)}, 10000);
+
+        // function carousel(varObject) {
+        //     var slideCount = varObject.getSlideCount() - 1;
+        //     var currentSlide = varObject.getCurrentSlideIndex();
+        //     if (currentSlide == slideCount) {
+        //         varObject.gotoFirstSlide();
+        //     }
+        //     else { 
+        //         varObject.gotoNextSlide(); 
+        //     }
+        // }
+    </script>
+    </body>
+</html>
